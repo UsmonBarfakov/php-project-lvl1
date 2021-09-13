@@ -1,7 +1,8 @@
 #!/usr/bin/env php
 <?php
-use Brain\Games\Cli;
+use function Brain\Games\Even\greeting;
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-Cli\greeting();
+\Brain\Games\Even\run();
+
