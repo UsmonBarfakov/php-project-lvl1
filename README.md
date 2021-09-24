@@ -8,4 +8,4 @@
 ## This is my first project in Hexlet.io education resource.
 
 ## Install and run videos
-[Brain even game](https://asciinema.org/a/vi9Q94VaNKTt3P9w9zRO5FRCI)
+[Brain even game](https://asciinema.org/a/FYfOfwwYtjaETlTuUDigCMbVe)
