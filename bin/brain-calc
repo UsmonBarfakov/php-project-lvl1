@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
-use BrainGames\Cli;
+use BrainGames\Calc;
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-Cli\greeting();
+Calc\run();

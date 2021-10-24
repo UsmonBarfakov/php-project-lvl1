@@ -9,3 +9,5 @@
 
 ## Install and run videos
 [Brain even game](https://asciinema.org/a/FYfOfwwYtjaETlTuUDigCMbVe)
+
+[Brain calc game](https://asciinema.org/a/C7W4nryYStLv9Wm5wnfHFJPqZ)

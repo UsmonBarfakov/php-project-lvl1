@@ -1,6 +1,6 @@
 <?php
 
-namespace Brain\Games\Even;
+namespace BrainGames\Even;
 
 use function cli\line;
 use function cli\prompt;
@@ -27,12 +27,12 @@ function startGame($userName, $countCorrect): void
     for ($usersCountCorrect = 0; $usersCountCorrect < $countCorrect; $usersCountCorrect++) {
         $number = getNumber();
         showMsg("Question: {$number}");
-        $answer = getAnswer("Your answer");
+        $answer = getAnswer("Your answer:");
 
         if ($answer === checkAnswer($number)) {
             showMsg("Correct!");
         } else {
-            showMsg("'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, {$userName}}");
+            showMsg("'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, {$userName}");
             return;
         }
     }
