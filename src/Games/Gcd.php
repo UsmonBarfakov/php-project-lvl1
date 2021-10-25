@@ -1,4 +1,5 @@
 <?php
+
 namespace BrainGames\Gcd;
 
 use function BrainGames\Engine\runGame;

@@ -1,7 +1,9 @@
 <?php
+
 namespace BrainGames\Calc;
 
 use function BrainGames\Engine\runGame;
+
 use const BrainGames\Engine\COUNT_OF_ROUNDS;
 
 function run(): void
