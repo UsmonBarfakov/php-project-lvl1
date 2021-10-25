@@ -9,15 +9,16 @@ const COUNT_OF_ROUNDS = 3;
 function runGame($questionText, array $questions)
 {
     $playerName = greeting();
-    foreach ($questions as $round)
-    {
-        line("{$questionText}\n");
-        line("Question: {$round['question']}\n");
-        $answer = prompt("Your answer:");
+    line($questionText);
+
+    foreach ($questions as $round) {
+        line("Question: %s", $round['question']);
+        $answer = prompt("Your answer");
         if ($round['correctAnswer'] === $answer) {
             line("Correct!");
         } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$round['correctAnswer']}'.\nLet's try again, {$playerName}");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$round['correctAnswer']}'.");
+            line("Let's try again, %s!", $playerName);
             return;
         }
     }
