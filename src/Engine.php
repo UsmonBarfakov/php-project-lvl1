@@ -15,6 +15,7 @@ function runGame($questionText, array $questions)
     foreach ($questions as $round) {
         line("Question: %s", $round['question']);
         $answer = prompt("Your answer");
+
         if ($round['correctAnswer'] === $answer) {
             line("Correct!");
         } else {

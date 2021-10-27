@@ -12,15 +12,16 @@ function run(): void
     $questions    = [];
 
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
-        $num = rand(1, 50);
-        $num2 = rand(1, 100);
+        $num      = rand(1, 50);
+        $num2     = rand(1, 100);
         $question = "{$num} {$num2}";
-        $answer = (string)gcd($num, $num2);
+        $answer   = (string)gcd($num, $num2);
         $questions[] = [
-            'question' => $question,
+            'question'      => $question,
             'correctAnswer' => $answer
         ];
     }
+
     runGame($questionText, $questions);
 }
 
@@ -33,5 +34,6 @@ function gcd($a, $b): int
             $b = $b % $a;
         }
     }
+
     return $a + $b;
 }

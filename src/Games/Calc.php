@@ -20,7 +20,7 @@ function run(): void
         $answer    = (string)calculateOperation($operation, $num, $num2);
 
         $questions[] = [
-            'question' => $question,
+            'question'      => $question,
             'correctAnswer' => $answer
         ];
     }

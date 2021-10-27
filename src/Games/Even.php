@@ -9,14 +9,14 @@ use const BrainGames\Engine\COUNT_OF_ROUNDS;
 function run(): void
 {
     $questionText = 'Answer "yes" if the number is even, otherwise answer "no".';
-    $questions = [];
+    $questions    = [];
 
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
         $question = rand(1, 100);
-        $answer = correctAnswer($question);
+        $answer   = correctAnswer($question);
 
         $questions[] = [
-            'question' => $question,
+            'question'      => $question,
             'correctAnswer' => $answer
         ];
     }
