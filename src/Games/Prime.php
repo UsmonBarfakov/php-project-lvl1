@@ -8,25 +8,25 @@ use const BrainGames\Engine\COUNT_OF_ROUNDS;
 
 function run(): void
 {
-    $questionText = 'Answer "yes" if given number is prime. Otherwise answer "on".';
-    $questions    = [];
+    $discription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+    $questions   = [];
 
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
-        $num = rand(1, 100);
-        $answer = isNumberPrime($num) ? 'yes' : 'no';
+        $number = rand(1, 100);
+        $answer = isNumberPrime($number) ? 'yes' : 'no';
 
         $questions[] = [
-            'question' => $num,
+            'question'      => $number,
             'correctAnswer' => $answer
         ];
     }
-    runGame($questionText, $questions);
+    runGame($discription, $questions);
 }
 
-function isNumberPrime($num): bool
+function isNumberPrime($number): bool
 {
-    for ($i = 2; $i <= sqrt($num); $i++) {
-        if ($num % $i == 0) {
+    for ($i = 2; $i <= sqrt($number); $i++) {
+        if ($number % $i == 0) {
             return false;
         }
     }

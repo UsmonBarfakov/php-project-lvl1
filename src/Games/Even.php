@@ -8,28 +8,23 @@ use const BrainGames\Engine\COUNT_OF_ROUNDS;
 
 function run(): void
 {
-    $questionText = 'Answer "yes" if the number is even, otherwise answer "no".';
-    $questions    = [];
+    $description = 'Answer "yes" if the number is even, otherwise answer "no".';
+    $questions   = [];
 
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
-        $question = rand(1, 100);
-        $answer   = correctAnswer($question);
+        $number = rand(1, 100);
+        $answer = isEven($number) ? 'yes' : 'no';
 
         $questions[] = [
-            'question'      => $question,
+            'question'      => $number,
             'correctAnswer' => $answer
         ];
     }
 
-    runGame($questionText, $questions);
+    runGame($description, $questions);
 }
 
-function correctAnswer($number): string
+function isEven($number): bool
 {
-    $result = $number % 2;
-    if ($result > 0) {
-        return 'no';
-    } else {
-        return 'yes';
-    }
+    return ($number % 2) > 0 ? false : true;
 }

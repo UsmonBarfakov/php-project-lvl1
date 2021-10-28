@@ -8,32 +8,32 @@ use const BrainGames\Engine\COUNT_OF_ROUNDS;
 
 function run(): void
 {
-    $questionText = 'What number is missing in the progression?';
-    $questions    = [];
+    $description = 'What number is missing in the progression?';
+    $questions   = [];
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
-        $length            = rand(5, 10);
-        $progr             = generateProgression($length);
-        $hideIndex         = rand(5, $length - 1);
-        $answer            = (string)$progr[$hideIndex];
-        $progr[$hideIndex] = '..';
-        $question          = implode(' ', $progr);
+        $length                  = rand(5, 10);
+        $progression             = generateProgression($length);
+        $hideIndex               = rand(5, $length - 1);
+        $answer                  = (string)$progression[$hideIndex];
+        $progression[$hideIndex] = '..';
+        $question                = implode(' ', $progression);
 
         $questions[] = [
             'question'      => $question,
             'correctAnswer' => $answer
         ];
     }
-    runGame($questionText, $questions);
+    runGame($description, $questions);
 }
 
 function generateProgression($length): array
 {
     $progression = [];
-    $num    = rand(1, 20);
-    $step   = rand(1, 20);
+    $number      = rand(1, 20);
+    $step        = rand(1, 20);
     for ($i = 0; $i < $length; $i++) {
-        $progression[] = $num;
-        $num += $step;
+        $progression[] = $number;
+        $number       += $step;
     }
     return $progression;
 }

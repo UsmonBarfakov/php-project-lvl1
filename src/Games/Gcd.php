@@ -8,24 +8,24 @@ use const BrainGames\Engine\COUNT_OF_ROUNDS;
 
 function run(): void
 {
-    $questionText = 'Find the greatest common divisor of given numbers.';
-    $questions    = [];
+    $description = 'Find the greatest common divisor of given numbers.';
+    $questions   = [];
 
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
-        $num      = rand(1, 50);
-        $num2     = rand(1, 100);
-        $question = "{$num} {$num2}";
-        $answer   = (string)gcd($num, $num2);
+        $number   = rand(1, 50);
+        $number2  = rand(1, 100);
+        $question = "{$number} {$number2}";
+        $answer   = (string)getGcd($number, $number2);
         $questions[] = [
             'question'      => $question,
             'correctAnswer' => $answer
         ];
     }
 
-    runGame($questionText, $questions);
+    runGame($description, $questions);
 }
 
-function gcd($a, $b): int
+function getGcd($a, $b): int
 {
     while ($a != 0 && $b != 0) {
         if ($a > $b) {

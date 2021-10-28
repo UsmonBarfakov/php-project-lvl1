@@ -7,19 +7,19 @@ use function cli\prompt;
 
 const COUNT_OF_ROUNDS = 3;
 
-function runGame($questionText, array $questions)
+function runGame($description, array $questions)
 {
     $playerName = greeting();
-    line($questionText);
+    line($description);
 
     foreach ($questions as $round) {
         line("Question: %s", $round['question']);
-        $answer = prompt("Your answer");
+        $playerAnswer = prompt("Your answer");
 
-        if ($round['correctAnswer'] === $answer) {
+        if ($round['correctAnswer'] === $playerAnswer) {
             line("Correct!");
         } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$round['correctAnswer']}'.");
+            line("'{$playerAnswer}' is wrong answer ;(. Correct answer was '{$round['correctAnswer']}'.");
             line("Let's try again, %s!", $playerName);
             return;
         }
