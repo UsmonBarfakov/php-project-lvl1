@@ -13,7 +13,7 @@ function run(): void
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
         $length            = rand(5, 10);
         $progr             = generateProgression($length);
-        $hideIndex         = rand(5, $length-1);
+        $hideIndex         = rand(5, $length - 1);
         $answer            = (string)$progr[$hideIndex];
         $progr[$hideIndex] = '..';
         $question          = implode(' ', $progr);
@@ -28,6 +28,7 @@ function run(): void
 
 function generateProgression($length): array
 {
+    $progression = [];
     $num    = rand(1, 20);
     $step   = rand(1, 20);
     for ($i = 0; $i < $length; $i++) {
