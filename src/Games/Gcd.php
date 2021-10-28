@@ -34,6 +34,5 @@ function gcd($a, $b): int
             $b = $b % $a;
         }
     }
-
     return $a + $b;
 }

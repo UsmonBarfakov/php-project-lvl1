@@ -10,8 +10,10 @@
 ## Install and run videos
 [Brain even game](https://asciinema.org/a/TjPm5NbbrTsR7F7YzJbhH6wgo)
 
-[Brain calc calc](https://asciinema.org/a/C7W4nryYStLv9Wm5wnfHFJPqZ)
+[Brain calc game](https://asciinema.org/a/C7W4nryYStLv9Wm5wnfHFJPqZ)
 
-[Brain calc gcd](https://asciinema.org/a/VC6mG0FNbZGvW2UwdrPOtYrWJ)
+[Brain gcd game](https://asciinema.org/a/VC6mG0FNbZGvW2UwdrPOtYrWJ)
 
-[Brain calc progression](https://asciinema.org/a/CobjQvvT3lALSt02co9UfccCT)
+[Brain progression game](https://asciinema.org/a/CobjQvvT3lALSt02co9UfccCT)
+
+[Brain prime game](https://asciinema.org/a/RG0QYjngN56hftYKIIAEg7nrs)

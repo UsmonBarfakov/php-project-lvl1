@@ -32,4 +32,3 @@ function isNumberPrime($num): bool
     }
     return true;
 }
-
