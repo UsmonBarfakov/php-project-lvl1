@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const COUNT_OF_ROUNDS = 3;
 
-function runGame($description, array $questions)
+function runGame(string $description, array $questions): void
 {
     $playerName = greeting();
     line($description);

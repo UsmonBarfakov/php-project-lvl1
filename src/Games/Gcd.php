@@ -25,7 +25,7 @@ function run(): void
     runGame($description, $questions);
 }
 
-function getGcd($a, $b): int
+function getGcd(int $a, int $b): int
 {
     while ($a != 0 && $b != 0) {
         if ($a > $b) {

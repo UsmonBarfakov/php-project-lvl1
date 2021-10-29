@@ -26,7 +26,7 @@ function run(): void
     runGame($description, $questions);
 }
 
-function generateProgression($length): array
+function generateProgression(int $length): array
 {
     $progression = [];
     $number      = rand(1, 20);

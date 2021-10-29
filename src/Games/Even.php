@@ -24,7 +24,7 @@ function run(): void
     runGame($description, $questions);
 }
 
-function isEven($number): bool
+function isEven(int $number): bool
 {
     return ($number % 2) > 0 ? false : true;
 }

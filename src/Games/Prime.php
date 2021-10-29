@@ -23,7 +23,7 @@ function run(): void
     runGame($discription, $questions);
 }
 
-function isNumberPrime($number): bool
+function isNumberPrime(int $number): bool
 {
     for ($i = 2; $i <= sqrt($number); $i++) {
         if ($number % $i == 0) {

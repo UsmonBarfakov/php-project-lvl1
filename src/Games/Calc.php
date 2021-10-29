@@ -28,18 +28,15 @@ function run(): void
     runGame($description, $questions);
 }
 
-function getResult($operation, $number, $number2): int
+function getResult(string $operation, int $number, int $number2): int
 {
     switch ($operation) {
         case '+':
             return $number + $number2;
-            break;
         case '-':
             return $number - $number2;
-            break;
         case '*':
             return $number * $number2;
-            break;
         default:
             throw new \Exception('Unknown operation!');
     }
