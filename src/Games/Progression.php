@@ -11,9 +11,9 @@ function run(): void
     $description = 'What number is missing in the progression?';
     $questions   = [];
     for ($i = 0; $i < COUNT_OF_ROUNDS; $i++) {
-        $length                  = rand(5, 10);
+        $length                  = rand(4, 9);
         $progression             = generateProgression($length);
-        $hideIndex               = rand(5, $length - 1);
+        $hideIndex               = rand(4, $length);
         $answer                  = (string)$progression[$hideIndex];
         $progression[$hideIndex] = '..';
         $question                = implode(' ', $progression);
@@ -31,7 +31,7 @@ function generateProgression($length): array
     $progression = [];
     $number      = rand(1, 20);
     $step        = rand(1, 20);
-    for ($i = 0; $i < $length; $i++) {
+    for ($i = 0; $i <= $length; $i++) {
         $progression[] = $number;
         $number       += $step;
     }
