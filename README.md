@@ -6,6 +6,7 @@
 [![PHP CI](https://github.com/UsmonBarfakov/php-project-lvl1/actions/workflows/CI%20PHP.yml/badge.svg)](https://github.com/UsmonBarfakov/php-project-lvl1/actions/workflows/CI%20PHP.yml)
 
 ### This is my first project in Hexlet.io education resource.
+This is my first project in Hexlet.io education resource.
 
 ## Install and run videos
 [Brain even game](https://asciinema.org/a/TjPm5NbbrTsR7F7YzJbhH6wgo)
