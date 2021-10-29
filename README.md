@@ -8,6 +8,10 @@ This is my first project in Hexlet.io education resource.
 [![PHP CI](https://github.com/UsmonBarfakov/php-project-lvl1/actions/workflows/CI%20PHP.yml/badge.svg)](https://github.com/UsmonBarfakov/php-project-lvl1/actions/workflows/CI%20PHP.yml)
 
 ## Install
+```sh
+$ git clone https://github.com/UsmonBarfakov/php-project-lvl1.git
+$ make install
+```
 
 ## Run videos
 [Brain even game](https://asciinema.org/a/TjPm5NbbrTsR7F7YzJbhH6wgo)
