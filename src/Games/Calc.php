@@ -16,7 +16,7 @@ function run(): void
         $number    = rand(1, 10);
         $number2   = rand(1, 10);
         $operation = $operations[array_rand($operations)];
-        $question  = $number . $operation . $number2;
+        $question  = "{$number} {$operation} {$number2}";
         $answer    = (string)getResult($operation, $number, $number2);
 
         $questions[] = [
