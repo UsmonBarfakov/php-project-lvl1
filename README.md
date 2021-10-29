@@ -1,4 +1,4 @@
-#PHP project level 1
+# PHP project level 1
 
 This is my first project in Hexlet.io education resource.
 
@@ -9,7 +9,7 @@ This is my first project in Hexlet.io education resource.
 
 ## Install
 
-##Run videos
+## Run videos
 [Brain even game](https://asciinema.org/a/TjPm5NbbrTsR7F7YzJbhH6wgo)
 
 [Brain calc game](https://asciinema.org/a/C7W4nryYStLv9Wm5wnfHFJPqZ)
